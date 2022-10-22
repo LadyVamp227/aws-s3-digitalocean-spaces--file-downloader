@@ -1,6 +1,6 @@
-# File Downloader from AWS S3 bucket and Digital Ocean Spaces
+# File Downloader from AWS S3 bucket and DigitalOcean Spaces
 
-Since i have never found an optimal solution for downloading files form AWS S3 bucket and DigitalOcean Spaces i decide to create my own.
+Since I have never found an optimal solution for downloading files from AWS S3 bucket and DigitalOcean Spaces I decided to create my own.
 I hope that this solution would help some of you also. I tried to make it so that it can be easily reused by command line flags when running the program.
 With this approach, you can easily create secrets in your GitHub repository and set them as the value of each of the flags in your pipeline.
 By this approach you can securely upload your .env file in AWS S3 bucket or in DigitalOcean Spaces and in your pipeline you can download it.
@@ -11,7 +11,7 @@ The flags that this program supports are :
 3. `-endpoint` URL points to your s3/space. 
 * Example `https://fra1.digitaloceanspaces.com/` or with the bucket name `https://examples.fra1.digitaloceanspaces.com/`.
 4. `-bucket` Name of the bucket. 
-* If you haven't added it with the url in the `-endpoint` flag you must provide it otherwise just skip this flag.
+* If you didn't add  it in the url in the `-endpoint` flag you must provide it otherwise just skip this flag.
 5. `-region` Region where your bucket is located
 6. `-file` Name of the file that you want to download form the bucket.
 7. `-destination` Absolute path and name of the file that you should save the output. 
