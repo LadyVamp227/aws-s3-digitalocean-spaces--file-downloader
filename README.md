@@ -1,4 +1,4 @@
-# File Downloader from AWS S3 bucket and DigitalOcean Spaces
+# File Downloader with Go(Golang) from AWS S3 bucket and DigitalOcean Spaces
 
 Since I have never found an optimal solution for downloading files from AWS S3 bucket and DigitalOcean Spaces I decided to create my own.
 I hope that this solution would help some of you also. I tried to make it so that it can be easily reused by command line flags when running the program.
