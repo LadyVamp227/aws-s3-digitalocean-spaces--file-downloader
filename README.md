@@ -6,15 +6,18 @@ With this approach, you can easily create secrets in your GitHub repository and 
 By this approach you can securely upload your .env file in AWS S3 bucket or in DigitalOcean Spaces and in your pipeline you can download it.
 
 The flags that this program supports are :
-1. `-key` Which is your access key that you should create in AWS/DigitalOcean
-2. `-secret` This is the secret of this key.
-3. `-endpoint` That flag is for the exact https url points to your s3/space. Example `https://fra1.digitaloceanspaces.com/` or with the bucket name `https://examples.fra1.digitaloceanspaces.com/`.
-4. `-bucket` The name of the bucket. If you haven't added it with the url in the `-endpoint` flag you must provide it otherwise just skip this flag.
-5. `-region` This is the region where your bucket is located
-6. `-file` This is the name of the file that you want to download form the bucket.
-7. `-destination` This is the absolute path and name of the file that you should save the output. If you run the program in the folder that you desire to dowload the file you should just need to provide only the name otherwise you should provide the exact path.
+1. `-key` Access key for AWS/DigitalOcean bucket.
+2. `-secret` Secret for AWS/DigitalOcean bucket.
+3. `-endpoint` URL points to your s3/space. 
+* Example `https://fra1.digitaloceanspaces.com/` or with the bucket name `https://examples.fra1.digitaloceanspaces.com/`.
+4. `-bucket` Name of the bucket. 
+* If you haven't added it with the url in the `-endpoint` flag you must provide it otherwise just skip this flag.
+5. `-region` Region where your bucket is located
+6. `-file` Name of the file that you want to download form the bucket.
+7. `-destination` Absolute path and name of the file that you should save the output. 
+* If you run the program in the folder that you desire to download the file you should just need to provide only the name otherwise you should provide the exact path.
 
-With `go run downlad.go -h` you can see all flags and what you should add as value
+With `go run downlad.go -h` you can see all flags and what you should add as value.
 
 Examples for DigitalOcean Spaces :
 
