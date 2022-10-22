@@ -1,1 +1,1 @@
-# aws-s3-digitalocean-spaces--file-downloader
+# aws-s3-digitalocean-spaces-file-downloader
