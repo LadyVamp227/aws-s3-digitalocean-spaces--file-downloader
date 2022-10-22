@@ -30,5 +30,5 @@ Examples for DigitalOcean Spaces :
 
 
 
-The example for AWS S3 is analogical, because DigitalOcean Spaces uses their API.
+The examples for AWS S3 is analogical, because DigitalOcean Spaces uses their API.
 If there is some mistakes you recognized in the code or in the readme, or you have questions you can write to me at `g.rudarska@gmail.com`
